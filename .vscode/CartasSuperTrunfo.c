@@ -22,21 +22,23 @@ int main() {
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+
+    // cadastro da primeira cidade
     printf("Cadastre a Carta 1: \n");
     printf("Estado (A-H): \n");
-    scanf(" %c", &estado1);
+    scanf(" %c", &estado1); // %c -> lê um único caractere, que seria a sigla do estado
 
     printf("Código da Carta: \n");
-    scanf("%s", codigo1);
+    scanf("%s", codigo1); // %s -> lê a string (texto sem espaço), armazenada num array
     
     printf("Nome da Cidade: \n");
     scanf("%s", cidade1);
     
     printf("População: \n");
-    scanf("%d", &populaçao1);
+    scanf("%d", &populaçao1); // %d -> lê um número inteiro
     
     printf("Área (km²): \n");
-    scanf("%f", &area1);
+    scanf("%f", &area1); // %f -> lê um núm. decimal
     
     printf("PIB: \n");
     scanf("%f", &pib1);
@@ -44,8 +46,9 @@ int main() {
     printf("Pontos Turísticos: \n");
     scanf("%d", &pontos1);
 
-    getchar();
+    getchar(); // Para evitar problemas na leitura do próx. caractere
 
+    // cadastro da segunda cidade
     printf("Cadastre a Carta 2: \n");
     printf("Estado (A-H): \n");
     scanf(" %c", &estado2);
@@ -71,6 +74,8 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    // Informações da carta 1 conforme preenchido
     printf("Informações Carta 1 \n");
     printf("Estado: %c \n", estado1);
     printf("Código: %s \n", codigo1);
@@ -80,6 +85,7 @@ int main() {
     printf("PIB: %f\n", pib1);
     printf("Pontos Turísticos: %d\n", pontos1); 
 
+    // Informações da carta 2 conforme preenchido
     printf("Informações Carta 2 \n");
     printf("Estado: %c \n", estado2);
     printf("Código: %s \n", codigo2);
@@ -89,5 +95,6 @@ int main() {
     printf("PIB: %f\n", pib2);
     printf("Pontos Turísticos: %d\n", pontos2);
 
-    return 0;
+    return 0; // Finaliza o programa
+
 }
